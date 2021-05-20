@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden 3D Text</title>
+    <style>
+        body {
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        #h1{
+            color: white;
+            font-size:8vw;
+            font-family: Arial, Helvetica, sans-serif;
+            animation: identifier infinite 5s linear;
+        }
+        @keyframes identifier {
+            0%{text-shadow:none;}
+            50%{text-shadow: -2px -2px  grey;}
+            100%{text-shadow:none;}
+        }
+    </style>
+</head>
+<body>
+    <h1 id="h1">Hidden 3D Text</h1>
+</body>
+</html>
